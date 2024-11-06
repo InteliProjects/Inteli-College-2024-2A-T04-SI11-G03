@@ -1,0 +1,42 @@
+.monthly-graph{
+    display: block;
+    width: 30vw;
+    margin-top: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.align-graph{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text{
+    font-size: 13px;
+}
+
+.input-search{
+    width: 6vw;
+    font-size: 13px;
+    padding: 2px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.input-container{
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    padding: 2px;
+    width: 9vw;
+    display: flex;
+    cursor: pointer;
+}
+
+.search-img{
+    width: 20px;
+}

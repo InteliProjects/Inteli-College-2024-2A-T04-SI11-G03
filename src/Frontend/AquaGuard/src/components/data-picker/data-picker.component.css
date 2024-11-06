@@ -1,0 +1,29 @@
+input{
+  background-color: #ffffff;
+  border-radius: 8px;
+  outline: 0;
+  width: 150px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #C0C0C0;
+  margin-left: 10px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container i {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  color: #888; 
+}
+
+.input-container input {
+  padding-left: 35px; 
+}
+

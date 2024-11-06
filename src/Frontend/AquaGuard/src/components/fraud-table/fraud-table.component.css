@@ -1,0 +1,165 @@
+  .p-table {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .p-table th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .p-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .p-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    outline: 0;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    color: #333;
+  }
+  
+  .action-button:hover {
+    color: #007bff;
+  }
+  
+  .p-paginator {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .p-paginator .p-paginator-pages {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .p-paginator .p-paginator-page {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+  }
+  
+  .p-paginator .p-paginator-page.p-highlight {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .p-paginator .p-paginator-page:hover {
+    background-color: #f1f1f1;
+  }
+  
+  select.ng-invalid.ng-touched {
+    border-color: red;
+  }
+  
+  select option {
+    color: black;
+  }
+  
+  select option[value="Fraude"] {
+    color: #C64B52;
+  }
+  
+  select option[value="Não Fraude"] {
+    color: #608724;
+  }
+  
+  select option[value="Em aberto"] {
+    color: #EC6E13;
+  }
+  
+  select option[value="Em análise"] {
+    color: #1B7AC3;
+  }
+  
+  select option[value="Em Fiscalização"] {
+    color: black;
+  }
+  
+  select option[value="Fiscalizado S/ Fraude"] {
+    color: #6BB70B;
+  }
+  
+  select option[value="Fiscalizado C/ Fraude"] {
+    color: #8D2323;
+  }
+  
+  select option[value="Sem status"] {
+    color: #A9A9A9;
+  }
+  
+  .pi-ellipsis-v {
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  .pi-ellipsis-v:hover {
+    color: #0056b3;
+  }
+
+  .table-container {
+    max-width: calc(
+      100% - 80px
+    ); 
+    margin: 0 auto; 
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  
+  .p-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .p-table th,
+  .p-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .p-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .action-button:hover {
+    color: #007bff;
+  }

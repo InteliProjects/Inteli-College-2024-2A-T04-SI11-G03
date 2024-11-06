@@ -1,0 +1,9 @@
+# Ignorar todos os arquivos Parquet na pasta Pre-processamento
+src/Pre-processamento/*.parquet
+
+# Ignorar todos os arquivos CSV na pasta Pre-processamento
+src/Pre-processamento/*.csv
+/src/application/LeakSeekerModel/.idea
+venv/
+
+*.pyc

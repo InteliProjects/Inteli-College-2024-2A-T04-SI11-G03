@@ -1,0 +1,30 @@
+<div class="upload-container">
+
+    <img class="upload-img" src="../../assets/upload.svg"/>
+
+    <div>
+      <div class="upload-text">Adicione seu arquivo CSV</div>
+      <div class="upload-subtext">Limite do tamanho do arquivo: 500 MB</div>
+    </div>
+  
+    <button class="upload-btn" [ngClass]="{'error-btn': isError}" (click)="triggerFileInput(fileInput)">Pesquisar</button>
+  
+    <input type="file" id="fileInput" #fileInput (change)="onFileSelected($event)" style="display: none;">
+</div>
+
+<div class="file-name" *ngIf="fileName">
+    <div>
+        <img class="icon-paper" src="../../assets/paper.svg">
+        {{ fileName }}
+    </div>
+    <button class="upload-cancel" (click)="clearFile(fileInput)"><img class="icon-cancel" src="../../assets/cancel.svg"></button>
+</div>
+  
+<div *ngIf="isError || isCsv" class="message-box" [ngClass]="{'error-box': isError, 'success-box': isCsv}">
+    <img *ngIf="isError" src="../../assets/alert.svg" alt="Erro" class="icon-error">
+    <img *ngIf="isCsv" src="../../assets/sucess.svg" alt="Sucesso" class="icon-success">
+    <span *ngIf="isError">{{ errorMessage }}</span>
+    <span *ngIf="isCsv">Arquivo carregado e enviado com sucesso.</span>
+  </div>
+  
+  

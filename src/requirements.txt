@@ -1,0 +1,15 @@
+tensorflow
+keras
+pandas
+numpy
+sklearn
+seaborn
+gdown
+imblearn
+matplotlib
+plotly
+pathlib
+meteostat
+datetime
+shap
+optuna

@@ -1,0 +1,140 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%; 
+  overflow: auto; 
+  min-height: 450px; 
+}
+
+.modal-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(#1A8CD1, #1C65B1, #214493);
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.modal-subtitle{
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.modal-content{
+  margin-top: 30px;
+}
+
+.save {
+  background-color: #1B7AC3;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.save:hover {
+  background-color: #5FA1D5;
+  color: #FFFFFF;
+}
+
+.align{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-input{
+  font-size: 1rem;
+}
+
+img{
+  display: block;
+  width: 800px;  
+  height: auto;  
+  margin: 0;
+  padding: 0;
+  border: none;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+input{
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  width: 230px;
+  height: 30px;
+  outline: none;
+}
+
+.disabled-input {
+  border: none; 
+  background-color: #f0f0f0; 
+}
+
+
+.modal-actions{
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.edit {
+  background-color: #ffffff;
+  color: #909090;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 1px solid #A9A9A9;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.edit:hover {
+  background-color: #636363;
+  color: #f7f7f7;
+}
+
+.custom-confirm-button {
+  background-color: #1B7AC3;
+  color: white;              
+  border: none;           
+}
+
+.custom-confirm-button:hover {
+  background-color: #5FA1D5; 
+}

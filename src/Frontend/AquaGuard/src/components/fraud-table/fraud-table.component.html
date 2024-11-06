@@ -1,0 +1,56 @@
+<div>
+    <p-table
+    [value]="customers"
+    [paginator]="true"
+    [rows]="rowsPerPage"
+    [rowsPerPageOptions]="rowsPerPageOptions"
+    [responsiveLayout]="'scroll'"
+    >
+    <ng-template pTemplate="header">
+        <tr>
+        <th>Matrícula</th>
+        <th>Consumo médio m³</th>
+        <th>Faturamento</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Chance de Fraude (%)</th>
+        <th>Status</th>
+        <th></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-customer>
+        <tr>
+        <td>{{ customer.maskedId }}</td>
+        <td>{{ customer.averageConsumption }}</td>
+        <td>{{ customer.balance | currency }}</td>
+        <td>{{ customer.latitude }}</td>
+        <td>{{ customer.longitude }}</td>
+        <td>{{ customer.fraudPercentage }}%</td>
+        <td>
+            <select
+            [(ngModel)]="customer.status"
+            [ngStyle]="{ color: getStatusColor(customer.status) }"
+            >
+            <option
+                *ngFor="let option of statusOptions"
+                [value]="option.label"
+                [style.color]="option.color"
+            >
+                {{ option.label }}
+            </option>
+            </select>
+        </td>
+        <td>
+            <button (click)="onActionClick(customer)" class="action-button">
+            <i class="pi pi-ellipsis-v"></i>
+            </button>
+        </td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+        <tr>
+        <td colspan="8">Nenhum cliente encontrado.</td>
+        </tr>
+    </ng-template>
+    </p-table>
+</div>

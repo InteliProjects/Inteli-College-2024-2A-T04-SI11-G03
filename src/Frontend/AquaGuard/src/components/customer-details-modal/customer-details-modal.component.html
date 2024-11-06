@@ -1,0 +1,54 @@
+<div class="modal-backdrop">
+  <div class="modal-container">
+    <img src="../../assets/background-modal.svg">
+    <div class="modal-header">Bloco de edição</div>
+    <div class="modal-subtitle">Abaixo estão os campos da matrícula selecionada. Edite os campos, se necessário. Lembre-se de salvar.</div>
+    
+    <div class="modal-content">
+      <p class="title-input">Status</p>
+      <input type="text" [disabled]="!isEditing" [(ngModel)]="customer.status" [ngClass]="{'disabled-input': !isEditing}"/>
+
+      <div class="align">
+        <div>
+          <p class="title-input">Matrícula</p>
+          <input type="text" [disabled]="!isEditing" [(ngModel)]="customer.id" [ngClass]="{'disabled-input': !isEditing}"/>
+        </div>
+
+        <div>
+          <p class="title-input">Consumo médio (m³)</p>
+          <input type="number" [disabled]="!isEditing" [(ngModel)]="customer.averageConsumption" [ngClass]="{'disabled-input': !isEditing}"/>
+        </div>
+
+        <div>
+          <p class="title-input">Faturamento</p>
+          <input type="number" [disabled]="!isEditing" [(ngModel)]="customer.balance" [ngClass]="{'disabled-input': !isEditing}"/>
+        </div>
+      </div>
+     
+      <div class="align">
+        <div>
+          <p class="title-input">Latitude</p>
+          <input type="number" [disabled]="!isEditing" [(ngModel)]="customer.latitude" [ngClass]="{'disabled-input': !isEditing}"/>
+        </div>
+    
+        <div>
+          <p class="title-input">Longitude</p>
+          <input type="number" [disabled]="!isEditing" [(ngModel)]="customer.longitude" [ngClass]="{'disabled-input': !isEditing}"/>
+        </div>
+
+        <div>
+          <p class="title-input">Fraude (%)</p>
+          <input type="number" [disabled]="!isEditing" [(ngModel)]="customer.fraudPercentage" [ngClass]="{'disabled-input': !isEditing}"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button (click)="toggleEdit()" class="edit">
+        {{ isEditing ? 'Cancelar' : 'Editar' }}
+      </button>
+      <button (click)="onClose()" class="save">Salvar</button>
+    </div>
+    
+  </div>
+</div>

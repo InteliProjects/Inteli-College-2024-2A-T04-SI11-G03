@@ -1,0 +1,58 @@
+<div class="gradient">
+  <img class="logoAegea" src="../assets/logoAegea.svg">
+  <div class="Accessibility">
+    <button mat-button class="-A" (click)="decreaseLetter()">A-</button>
+    <button mat-button class="A" (click)="normalLetter()">A</button>
+    <button mat-button class="AA" (click)="increaseLetter()">A+</button>
+  </div>
+</div>
+
+<main class="main">
+  <div class="align-principal">
+    <div>
+      <img class="logo" src="../assets/logo.svg">
+    </div>
+    <div class="align-logo">
+      <span class="title">AquaGuard</span>
+      <p class="subtitle">Análise de comportamentos fraudulentos no consumo de água para clientes residenciais, identificando padrões suspeitos e prevenindo perdas.</p>
+    </div>
+  </div>
+
+  <div class="align">
+    <app-upload></app-upload>
+  </div>
+
+  <div class="align">
+    <span class="title-h2">Análises</span>
+    <p class="subtitle">Exibição detalhada das principais métricas de fraudes no consumo de água.</p>
+  </div>
+
+  <div class="align-cards">
+    <div>
+      <app-monthly-consumption-graph></app-monthly-consumption-graph>
+    </div>
+    <div class="align-cards-padding">
+      <app-consumptio-table></app-consumptio-table>
+    </div>
+    <div class="align-cards-padding">
+      <app-invoicing-table></app-invoicing-table>
+    </div>
+  </div>
+
+  <div class="alignment">
+    <div>
+      <!-- <app-both></app-both> -->
+    </div>
+    <div class="alignment">
+      <app-search></app-search>
+      <app-data-picker></app-data-picker>
+    </div>
+  </div>
+    
+  <div class="align">
+    <app-fraud-table></app-fraud-table>
+  </div>
+  
+</main>
+
+<router-outlet />

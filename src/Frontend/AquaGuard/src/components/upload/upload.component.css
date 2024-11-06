@@ -1,0 +1,119 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.upload-container {
+    width: 30vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 4px #cccccc;
+    border-radius: 8px;
+    background-color: #F0F2F6;
+    cursor: pointer;
+}
+
+.upload-img{
+    margin-left: 15px;
+    width: 20px;
+}
+
+.upload-text {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.upload-subtext {
+    font-size: 8px;
+    color: #A9A9A9;
+}
+.upload-btn {
+    background-color: #1B7AC3;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.upload-btn:hover {
+    background-color: #5FA1D5;
+}
+input[type="file"] {
+    display: none;
+}
+.file-name {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    display: flex; 
+    align-items: center; 
+}
+
+.upload-cancel{
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.error-box {
+    margin-top: 20px;
+    color: #C64B52;
+    background-color: #FFECEE;
+    padding: 5px;
+    border: 1px solid #C64B52;
+    border-radius: 5px;
+    text-align: left;
+    width: 400px;
+    font-size: 10px;
+    display: flex; 
+    align-items: center; 
+}
+
+.success-box {
+    margin-top: 20px;
+    color: #608724;
+    background-color: #F4FAE6;
+    padding: 5px;
+    border: 1px solid #608724;
+    border-radius: 5px;
+    text-align: left;
+    width: 400px;
+    font-size: 10px;
+    display: flex; 
+    align-items: center; 
+}
+  
+.error-btn {
+    background-color: #000000;
+    color: white;
+}
+
+.error-btn:hover {
+    background-color: #5E5E5E;
+    color: white;
+}
+
+.icon-paper{
+    width: 10px;
+    margin-right: 5px;
+}
+
+.icon-error{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.icon-cancel{
+    width: 10px;
+}
+
+.icon-success{
+    width: 20px;
+    margin-right: 5px;
+}

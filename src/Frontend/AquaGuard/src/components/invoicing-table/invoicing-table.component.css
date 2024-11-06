@@ -1,0 +1,64 @@
+.align{
+    display: block;
+    width: 30vw;
+    height: 18.5vw;
+    margin-top: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.align-title{
+    display: flex;
+    align-items: center;
+}
+
+.align-subtitle{
+    display: flex;
+    align-items: center;
+}
+
+.spacing1{
+    margin-left: 1vw;
+    height: auto;
+}
+
+.spacing2{
+    margin-left:4vw;
+    height: auto;
+}
+
+.spacing-img{
+    margin-right: 10px;
+    width: 15px;
+}
+
+.percentage1{
+    font-size: 1rem;
+    color: #608724;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.percentage2{
+    font-size: 1rem;
+    color: #C64B52;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.waterConsumption{
+    font-size: 3.5rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #A9A9A9;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 70px;
+}
